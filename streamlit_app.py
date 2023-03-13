@@ -1,4 +1,5 @@
 import streamlit
+from urllib.error import URLError
 
 streamlit.title('My Parents New Healthy Diner')
 
@@ -25,7 +26,6 @@ streamlit.dataframe(fruits_to_show)
 streamlit.header("Fruityvice Fruit Advice!")
 
 import requests
-streamlit.header("Fruityvice Fruit Advice!")
 try:
   fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
   if not fruit_choice:
